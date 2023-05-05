@@ -1,1 +1,120 @@
-{\rtf1}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta nane ="viewport" content="width=device-width, initial-scale=1"
+        <title>
+            <b>Welcome to my Example Code Website!</b>
+            <link rel="stylesheet" type="text/css" href="Style.css">
+        </title>
+        <body>
+            <p>
+                # ask the user for input
+highways_numbered = int(input("Please enter a highway number: "))
+
+# check if input ends in 00
+if highways_numbered % 100 == 0:
+    print("Invalid input. Please enter a number between 1 and 999.")
+else:
+    # extract the last two digits of the input
+    last_two_digits = highways_numbered % 100
+
+    # check if it is a primary or auxiliary highway
+    if highways_numbered >= 1 and highways_numbered <= 99:
+        if highways_numbered % 2 == 1:
+            direction = "north/south"
+        else:
+            direction = "east/west"
+        print(f"I-{highways_numbered} is primary going {direction}.")
+    elif highways_numbered >= 100 and highways_numbered <= 999:
+        primary_highway = last_two_digits
+        if primary_highway % 2 == 1:
+            direction = "north/south"
+        else:
+            direction = "east/west"
+        print(f"I-{highways_numbered} is auxiliary, serving I-{primary_highway}, going {direction}.")
+    else:
+        print("Invalid input. Please enter a number between 1 and 999.")
+
+            </p>
+            <hr>
+            <p>
+                
+print("Here is a list of our avaialable car wash services!")
+print("*************************")
+print("Air freshener : $1")
+print("Rain repellent : $2")
+print("Tire shine : $2")
+print("Wax : $3")
+print("Vacuum : $5")
+print("*************************")
+
+services = {'Air freshener': 1, 'Rain repellent': 2, 'Tire shine': 2, 'Wax': 3, 'Vacuum': 5}
+
+selected_services = input('Enter selected services separated by comma: ')
+selected_services = selected_services.split(',')
+
+total_cost = 10
+selected_services_list = []
+for service in selected_services:
+    service = service.strip()
+    if service in services:
+        total_cost += services[service]
+        selected_services_list.append(f'{service}: ${services[service]:.2f}')
+
+print("ZyCar Wash")
+print("Base car wash: $10")
+print('-------')
+for service in selected_services_list:
+    print(service)
+print('-------')
+print(f'Total price: ${total_cost:.2f}')
+print("Have a nice day!")
+
+            </p>
+            <hr>
+            <p>
+                class Animal:
+    def __init__(self, animal_type, name, mood):
+        self.animal_type = animal_type
+        self.name = name
+        self.mood = mood
+    
+    def get_animal_type(self):
+        return self.animal_type
+    
+    def set_animal_type(self, animal_type):
+        self.animal_type = animal_type
+        
+    def get_name(self):
+        return self.name
+    
+    def set_name(self, name):
+        self.name = name
+        
+    def get_mood(self):
+        return self.mood
+    
+    def set_mood(self, mood):
+        self.mood = mood
+def main():
+    animal_type = input("Enter the animal's type: ")
+    name = input("Enter the animal's name: ")
+    mood = input("Enter the animal's mood: ")
+    
+    animal = Animal(animal_type, name, mood)
+    
+    print(animal.get_name(),"the", animal.get_animal_type(),"is", animal.get_mood())
+    
+if __name__ == '__main__':
+    main()
+
+            </p>
+            <hr>
+            <a href="Index.html"><b>Home</b></a>
+        </body>
+
+    </head>
+</html>
+<p>
