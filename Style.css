@@ -1,5 +1,6 @@
 p {
     white-space: pre-wrap; /* This allows line breaks to be rendered */
+    color: #800080;
   }
     
   body {
@@ -10,6 +11,10 @@ p {
     padding: 1in;
     font-family: "Times New Roman", Times, serif;
     font-size: 18px;
+  }
+  .container {
+    background-color: #f5deb3;
+    padding: 20px; /* adjust as needed */
   }
   h2 img {
     margin: 0 auto;
@@ -30,4 +35,5 @@ p {
   }
   
   /* General styles */
+
   
