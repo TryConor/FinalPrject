@@ -1,6 +1,16 @@
-/* Style.css */
-/* Style.css */
 p {
     white-space: pre-wrap; /* This allows line breaks to be rendered */
   }
+    
+  body {
+    margin: 0 1in;
+    margin-top: 1in;
+    background-color: #f2f2f2;
+    border: .35in solid #333333;
+    padding: 1in;
+  }
+
+ 
+  
+  /* General styles */
   
