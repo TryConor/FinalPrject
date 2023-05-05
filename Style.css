@@ -8,9 +8,22 @@ p {
     background-color: #f2f2f2;
     border: .35in solid #333333;
     padding: 1in;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
   }
-
- 
-  
+  h2 img {
+    margin: 0 auto;
+    float: right;
+    display: block;
+    max-width: 100%;
+    border: 5px solid black;
+  }
+  h3 img {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    border: 5px solid black;
+    margin-bottom: 20px;
+  }
   /* General styles */
   
